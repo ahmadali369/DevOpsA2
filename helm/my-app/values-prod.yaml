@@ -1,0 +1,10 @@
+replicaCount: 4
+image:
+  repository: your-prod-image
+  tag: stable
+env:
+  db_host: "postgres-prod-service"
+resources:
+  limits:
+    cpu: "2000m"
+    memory: "2Gi"
